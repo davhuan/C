@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h
+#include <string.h>
+
+typdef struct postType{
+
+char namn[30], klubb[15];
+int nr;
+}
+postType;
+int main (){
+
+FILE *elitepek, *fbkpek;
+postType post;
+
+elitepek=fopen("ELIT.DAT","rb");
+fbkpek=fopen("FKB.DAT","w+b");
+fread(&post,sizeof(postType,1,elitepek);
+while(!feof(elitepek))
+{
+if(!strcmp(post.Klubb.DAT,"FKB"))  {
+fwrite(&post,sizeof(postType,1,fbkpek);
+
+}
+fread(&post,sizeof(postType),1,elitepek);
+}
+
+
+
+
+
+
+fseek(fbkpek,0,SEEK_SET);
+
+fread(&post,sizeof(postType,1,elitepek);
+while(!feof(fbkpek))
+{
+printf("%s ¤s %d\n");
+}
+
+fclose(elitepek);
+fclose(fbkpek);
+
+return 0;
+}
